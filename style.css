@@ -1,0 +1,61 @@
+/**************Content*************/
+/*********************************/
+/*
+                1.body
+                2.main
+                3.sidebar
+                4.main-content
+                5.music-player
+*/
+
+
+
+
+/*  start body styling  */
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Main style start*/
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+/* Main style start*/
+
+/*Sidebar styling start*/
+
+.sidebar{
+    background-color: red;
+    width: 340px;
+
+}
+
+/* Sidebar styling end */
+
+/* Main-content styling start */
+
+.main-content{
+    background-color: blue;
+    flex: 1;
+
+}
+
+/* Main-content styling end */
+
+/* Music-player styling start */
+
+.music-player{
+    background-color: yellow;
+    width: 100%;
+    height: 72px;
+    bottom: 0;
+    position: fixed;
+}
+/* Music-player styling end */
