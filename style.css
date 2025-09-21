@@ -10,7 +10,9 @@
 */
 
 /* color */
-:root
+:root{
+    --primary-color:var(--primary-color)
+}
 
 
 
