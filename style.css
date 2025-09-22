@@ -14,13 +14,14 @@
 /* 1.color */
 
 :root {
-    --primary-color: black;
-    --secondary-color: #121212;
-    --text-color: #fff;
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --default-font: "Montserrat", sans-serif;
-    --accent-font: "Montserrat";
+    --primary-color   : black;
+    --secondary-color : #121212; 
+    --text-color      :  #fff;
+    --white-color     : #ffffff;
+    --black-color     : #000000;
+    --default-font    : "Montserrat", sans-serif;
+    --accent-font     : "Montserrat";
+    --tertiary-color  : #292828;
 }
 
 
@@ -124,6 +125,25 @@ a {
 .icon i:hover{
     opacity: 1;
 }
+
+.box{
+    background-color: var(--tertiary-color);
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0.5rem 0;
+}
+
+.box-p1{
+    font-size: 1rem;
+    
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+
 /* library start */
 
 
