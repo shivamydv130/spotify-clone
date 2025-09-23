@@ -14,14 +14,14 @@
 /* 1.color */
 
 :root {
-    --primary-color   : black;
-    --secondary-color : #121212; 
-    --text-color      :  #fff;
-    --white-color     : #ffffff;
-    --black-color     : #000000;
-    --default-font    : "Montserrat", sans-serif;
-    --accent-font     : "Montserrat";
-    --tertiary-color  : #292828;
+    --primary-color: black;
+    --secondary-color: #121212;
+    --text-color: #fff;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --default-font: "Montserrat", sans-serif;
+    --accent-font: "Montserrat";
+    --tertiary-color: #292828;
 }
 
 
@@ -94,7 +94,7 @@ a {
 
 /* library start */
 
-.library{
+.library {
     background-color: var(--secondary-color);
     border-radius: 1rem;
     height: 100%;
@@ -102,32 +102,32 @@ a {
     padding: 0.5rem 0.75rem;
 }
 
-.option{
+.option {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.lib-option img{
+.lib-option img {
     height: 1.25rem;
     width: 1.25rem;
 }
 
-.icon{
+.icon {
     font-size: 1.25rem;
     display: flex;
 }
 
-.icon i{
+.icon i {
     opacity: 0.7;
     margin-right: 1rem;
 }
 
-.icon i:hover{
+.icon i:hover {
     opacity: 1;
 }
 
-.box{
+.box {
     background-color: var(--tertiary-color);
     height: 8rem;
     border-radius: 0.75rem;
@@ -135,14 +135,14 @@ a {
     padding: 0.75rem 1rem;
 }
 
-.box-p1{
+.box-p1 {
     font-size: 1rem;
-    font-weight: 500;
-    
+    font-weight: 550;
+
 }
 
-.box-p2{
-    font-size: 0.75rem;
+.box-p2 {
+    font-size: 0.90rem;
     opacity: 0.9;
 }
 
@@ -158,7 +158,12 @@ a {
 
 }
 
-/* library start */
+.dark-badge {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* library end */
 
 
 /* Sidebar styling end */
@@ -168,22 +173,84 @@ a {
 .main-content {
     background-color: var(--secondary-color);
     flex: 1;
-    border-radius: 1rem; /* 1rem = 16px */
+    border-radius: 1rem;
+    /* 1rem = 16px */
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 
 }
+
 /* Stiky-nav start */
 
 .sticky-nav {
     position: sticky;
     top: 0;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-icon {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .sticky-nav-icon .hide {
+        display: none;
+    }
+
+    .sticky-nav-option .hide {
+        display: none;
+    }
 }
 
 /* Stiky-nav end */
+
+/* Card styling start */
+
+.card {
+    background-color: var(--tertiary-color);
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.70rem;
+    margin: 1.5rem;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.10rem;
+    font-weight: 550;
+}
+
+.card-info{
+    opacity: 0.8;
+    font-size: 0.80rem;
+}
+
+/* Card styling end */
 
 /* Main-content styling end */
 
